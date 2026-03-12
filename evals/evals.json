@@ -1,0 +1,23 @@
+{
+  "skill_name": "github-cli-publisher",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Install GitHub CLI on this Windows machine, get GitHub authentication working, and make sure future GitHub publishing from the terminal is set up correctly.",
+      "expected_output": "Inspect the machine state, install gh if needed, choose a reliable authentication path, and summarize the final setup state plus any required user-auth checkpoint.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "This folder I want to publish is nested inside another unrelated Git repository. Create a clean publish repo from just this subfolder, push it to GitHub, and avoid touching the parent repo.",
+      "expected_output": "Detect that the current folder should not reuse the parent repository, create a clean sibling publish repo, and push only the intended content.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I already have packaged .skill files and a local repo, but git push and gh release commands are unreliable. Publish the repository anyway and create a release with both assets.",
+      "expected_output": "Use the most reliable available path, including GitHub API fallback if needed, and return the repo URL plus the release URL.",
+      "files": []
+    }
+  ]
+}
