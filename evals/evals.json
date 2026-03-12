@@ -1,0 +1,29 @@
+{
+  "skill_name": "github-cli-publisher",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Install GitHub CLI on this Windows machine, get GitHub authentication working, and make sure future GitHub publishing from the terminal is set up correctly without me manually piecing the steps together each time.",
+      "expected_output": "Inspect the machine state, install gh if needed, choose a reliable authentication path, and prefer the bundled automation script for future publish runs.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "This folder I want to publish is nested inside another unrelated Git repository. Create a clean publish repo from just this subfolder, create the GitHub repository, push it, and avoid touching the parent repo.",
+      "expected_output": "Detect that the current folder should not reuse the parent repository, create a clean sibling publish repo, and use the orchestration script to create the remote repo and push only the intended content.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I already have packaged .skill files and a local repo, and I want one command path that can create or update the GitHub repo, push the branch, create a release, and upload both assets even if some gh subcommands are flaky.",
+      "expected_output": "Use the bundled publish script, fall back to the GitHub API when needed, and return the repo URL plus the release URL.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Before touching GitHub, show me the exact JSON plan for how you would publish this folder, including whether you will create a clean repo, which remote URL you will use, and whether a release will be created.",
+      "expected_output": "Use the orchestration script in plan mode so the user can preview the end-to-end publish actions before any filesystem or network changes happen.",
+      "files": []
+    }
+  ]
+}

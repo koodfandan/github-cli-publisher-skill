@@ -1,0 +1,82 @@
+[
+    {
+        "query":  "Set up GitHub CLI on this Windows machine and make future terminal publishing to GitHub work end to end.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "This skill repo is local only right now. Create the GitHub repo, push main, and publish a release with the packaged .skill asset.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "This folder is nested inside another git repository. Publish only this subfolder to GitHub and do not touch the parent repo.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "gh auth login keeps failing on Windows. Use the most reliable path and get this machine ready to publish repos anyway.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "Repair origin for this local repo and push the current branch to the correct GitHub repository.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "Create a release for this repository and upload two .skill files as assets.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "Before touching GitHub, show me a JSON plan for how you would publish this folder and whether you need a clean publish repo.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "Automatically ship this Windows skill repo to GitHub, including repo creation, push, and release publishing.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "Use a fallback path if git push or gh release is flaky. I still need the repo and release published today.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "Publish this local tool folder to GitHub with HTTPS remotes and upload the packaged asset after the push.",
+        "should_trigger":  true
+    },
+    {
+        "query":  "Review this GitHub Actions workflow and tell me whether the release job is safe.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Teach me how gh repo view, gh pr create, and gh issue list work.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Rewrite this README so it looks more polished and product focused.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Publish this npm package to npmjs and update the changelog.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Write a PowerShell script that sorts zip files into folders by month.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Do a code review of this git repository and focus on the latest frontend changes.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "I already created the GitHub release in the browser. Just help me improve the release notes text.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Install Node.js, pnpm, and a few VS Code extensions on this machine.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Deploy this private documentation site to Vercel with environment variables and a custom domain.",
+        "should_trigger":  false
+    },
+    {
+        "query":  "Write a beginner tutorial explaining git, GitHub, fork, branch, and origin.",
+        "should_trigger":  false
+    }
+]
